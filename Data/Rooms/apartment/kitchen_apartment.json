@@ -1,0 +1,75 @@
+{
+    "roomID": "kitchen_apartment",
+    "name": "Küche",
+    "path": "../Data/Rooms/aparment/kitchen_apartment.json",
+    "atmoSound": "../Data/Sounds/Atmo/kitchen.mp3",
+    "slots": [
+        {
+            "type": "Interactable",
+            "slotID": "stove_apartment",
+            "name": "Herd"
+        },
+        {
+            "type": "Container",
+            "slotID": "drawer_cabinet",
+            "name": "Schubladenschrank",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": [
+                {
+                    "type": "Pickupable",
+                    "slotID": "old_postcards",
+                    "name": "Alte Postkarten",
+                    "usages": []
+                },
+                {
+                    "type": "Pickupable",
+                    "slotID": "cough_drops",
+                    "name": "Hustenbonbons",
+                    "usages": []
+                },
+                {
+                    "type": "Pickupable",
+                    "slotID": "double_sided_sticky_tape",
+                    "name": "Doppelseitiges Klebeband",
+                    "usages": []
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "slotID": "fridge_apartment",
+            "name": "Kühlschrank",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": [
+                {
+                    "type":"Pickupable",
+                    "slotID": "iced_tea",
+                    "name": "Eistee",
+                    "usages": []
+                },
+                {
+                    "type":"Pickupable",
+                    "slotID": "butter",
+                    "name": "Butter",
+                    "usages": []
+                }
+            ]
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_kitchen_apartment_livingroom_apartment",
+            "name": "Tür zum Wohnzimmer",
+            "enteringRoomID": "livingroom_apartment",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/forensicsDoor.mp3"],
+            "isOpen": true
+        },
+        null,
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 0
+}

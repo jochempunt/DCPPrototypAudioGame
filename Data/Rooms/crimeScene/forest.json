@@ -1,0 +1,49 @@
+{
+    "roomID": "forest",
+    "name": "Wald",
+    "path": "../Data/Rooms/crimeScene/forest.json",
+    "atmoSound": "../Data/Sounds/Atmo/wald.mp3",
+    "slots": [{
+            "type": "Container",
+            "slotID": "leaf_pile",
+            "name": "Laubhaufen",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": [{
+                    "type": "Pickupable",
+                    "slotID": "footprints",
+                    "name": "Fußabdrücke",
+                    "usages": []
+                },
+                {
+                    "type": "Pickupable",
+                    "slotID": "murder_weapon",
+                    "name": "Tatwaffe",
+                    "usages": []
+                }
+            ]
+        },
+        {
+            "type": "Interactable",
+            "slotID": "ground",
+            "name": "Boden",
+            "facingSound": []
+        },
+        {
+            "type": "Portal",
+            "slotID": "to_driveway",
+            "name": "Waldweg zur Einfahrt",
+            "facingSound": [],
+            "enteringRoomID": "driveway",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "false"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

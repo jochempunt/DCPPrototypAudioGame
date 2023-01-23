@@ -1,0 +1,75 @@
+{
+    "roomID": "kitchenTest",
+    "name": "Küche",
+    "path": "../Data/Rooms/testScene/kitchen_room_data.json",
+    "atmoSound": "../Data/Sounds/Atmo/kitchen.mp3",
+    "slots": [{
+            "type": "Portal",
+            "slotID": "door_to_forensicsTest",
+            "name": "Tür zur Forensik",
+            "enteringRoomID": "forensicsTest",
+            "facingSlotInOppositeRoom": 6,
+            "interactSound": ["../Data/Sounds/Portal/forensicsDoor.mp3"],
+            "isOpen": true
+        },
+        {
+            "type": "Interactable",
+            "slotID": "stove",
+            "name": "Herd"
+        },
+        null,
+        {
+            "type": "Portal",
+            "slotID": "door_to_livingroomTest",
+            "name": "Tür zum Wohnzimmer",
+            "enteringRoomID": "livingroomTest",
+            "facingSlotInOppositeRoom": 4,
+            "interactSound": ["../Data/Sounds/Portal/livingRoomDoor.mp3"],
+            "isOpen": true
+        },
+        null,
+        {
+            "type": "Pickupable",
+            "slotID": "cloth_with_stain",
+            "name": "Tuch mit unidentifiziertem Fleck",
+            "accessCharacter":"bob",
+            "usages": [{
+                "usageID": "examine_cloth",
+                "filepath": "das ist buchstäblich blut",
+                "targetSlotID": "microscope_2",
+                "effect": "",
+                "effectTargetID": "microscope_2"
+            }]
+        },
+        {
+            "type": "Interactable",
+            "slotID": "man_with_hat",
+            "name": "Mann mit Hut",
+            "accessCharacter":"Tim",
+            "usages": [{
+                    "usageID": "open_closet",
+                    "filepath": "hey, schau mal im schrank nach, du stinkst",
+                    "targetSlotID": "man_with_hat",
+                    "effect": "open_and_increment",
+                    "effectTargetID": "closetTest"
+                },
+                {
+                    "usageID": "middle_state",
+                    "filepath": "so kann ich dich nun wirklich nicht in die forensik reinlassen",
+                    "targetSlotID": "man_with_hat",
+                    "effect": "",
+                    "effectTargetID": "man_with_hat"
+                },
+                {
+                    "usageID": "open_closetTest",
+                    "filepath": "oh endlich hast du geduscht, ich gewähre dir zugang zur forensik",
+                    "targetSlotID": "man_with_hat",
+                    "effect": "open",
+                    "effectTargetID": "door_to_forensicsTest"
+                }
+            ]
+        },
+        null
+    ],
+    "focusedSlotIndex": 0
+}

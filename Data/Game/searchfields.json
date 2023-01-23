@@ -1,0 +1,11 @@
+[
+    {
+        "fieldID": "leavesSearch",
+        "hints": [
+            "blood",
+            "tear",
+            "brown_spot"
+        ],
+        "correctHint": "blood"
+    }
+]

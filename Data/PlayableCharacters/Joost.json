@@ -1,0 +1,38 @@
+{
+    "characterID": "joost",
+    "path": "../Data/PlayableCharacters/Bob.json",
+    "inventory": {
+        "focusedItemIndex": 0,
+        "inventoryID": "backpack",
+        "items": [
+            {
+                "itemID": "luminol",
+                "name": "luminol",
+                "usages": [{
+                    "usageID": "examine_blood1",
+                    "filepath": "Aha, das Luminol leuchtet.",
+                    "targetSlotID": "bloodstains",
+                    "effect": "increment_state",
+                    "effectTargetID": "bloodstains"
+                }],
+                "itemSound": "../Data/Sounds/Joost_Edited/JoostSelection/joost_inventar_luminol.mp3"
+            },
+            {
+                "itemID": "plaster",
+                "name": "gips",
+                "usages":[],
+                "itemSound":"../Data/Sounds/Joost_Edited/JoostSelection/joost_inventar_gips.mp3"
+            },
+            {
+                "itemID":"",
+                "name":"Pipette",
+                "usages":[],
+                "itemSound":"../Data/Sounds/Joost_Edited/JoostSelection/joost_inventar_pipette.mp3"
+            }
+
+        ]
+    },
+    "inventoryOpenSound": "../Data/Sounds/General/BagOpenSound.mp3",
+    "inventoryCloseSound": "../Data/Sounds/General/BagCloseSound.mp3",
+    "soundArrayIndex": 0
+}

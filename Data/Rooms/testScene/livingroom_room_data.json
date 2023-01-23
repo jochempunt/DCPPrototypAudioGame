@@ -1,0 +1,120 @@
+{
+    "roomID": "livingroomTest",
+    "name": "Wohnzimmer",
+    "path": "../Data/Rooms/testScene/livingroom_room_data.json",
+    "atmoSound": "../Data/Sounds/Atmo/livingRoom.mp3",
+    "slots": [
+        {
+            "type": "Portal",
+            "slotID": "door_to_kitchenTest",
+            "name": "Tür zur Küche",
+            "enteringRoomID": "kitchenTest",
+            "facingSlotInOppositeRoom": 0,
+            "interactSound": [
+                "../Data/Sounds/Portal/kitchenDoor.mp3",
+                "../Data/Sounds/Portal/bathroomDoor.mp3"
+            ],
+            "isOpen": true
+        },
+        {
+            "type": "Interactable",
+            "slotID": "microscope_1",
+            "name": "Mikroskop",
+            "isVisible": false,
+            "alreadySeen": true
+        },
+        {
+            "type": "Interactable",
+            "slotID": "window",
+            "name": "Fenster"
+        },
+        null,
+        {
+            "type": "Container",
+            "slotID": "closetTest",
+            "name": "Schrank",
+            "isOpen": true,
+            "containerItems": [
+                {
+                    "type": "Pickupable",
+                    "slotID": "key_to_bathroom",
+                    "name": "Schlüssel fürs Badezimmer",
+                    "accessCharacter": "bob",
+                    "itemSound":"../Data/Sounds/Portal/bathroomDoor.mp3",
+                    "usages": [
+                        {
+                            "usageID": "open_bathroom_door",
+                            "filepath": "oh die tür hat sich geöffnet",
+                            "targetSlotID": "door_to_bathroomTest",
+                            "effect": "open",
+                            "effectTargetID": "door_to_bathroomTest"
+                        }
+                    ]
+                },
+                {
+                    "type": "Pickupable",
+                    "slotID": "wrapping_paper",
+                    "name": "Geschenkpapier",
+                    "accessCharacter": "bob",
+                    "usages": [
+                        {
+                            "usageID": "show_microscope",
+                            "filepath": "was ist hier passiert?",
+                            "targetSlotID": "window",
+                            "effect": "setVisible",
+                            "effectTargetID": "microscope_1"
+                        }
+                    ],
+                    "facingSound": ["../Data/Sounds/VoiceLines/Rooms/driveway/muelltonne.mp3"],
+                    "discoverSound": ["../Data/Sounds/VoiceLines/Rooms/driveway/mülltonne_discover.mp3"]
+                },
+                {
+                    "type": "Pickupable",
+                    "slotID": "old_book",
+                    "name": "Altes Buch",
+                    "accessCharacter": "bob",
+                    "usages": [
+                        {
+                            "usageID": "shoveBook",
+                            "filepath": "weg damit, oh es öffnet sich eine tür",
+                            "targetSlotID": "closetTest",
+                            "effect": "shove",
+                            "effectTargetID": "closetTest"
+                        }
+                    ]
+                }
+            ],
+            "focusedItemIndex": 0
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_to_bathroomTest",
+            "name": "Tür zum Badezimmer",
+            "enteringRoomID": "bathroomTest",
+            "facingSlotInOppositeRoom": 6,
+            "interactSound": [
+                "../Data/Sounds/Portal/bathroomDoor.mp3"
+            ],
+            "isOpen": false,
+            "closedSound": [
+                "../Data/Sounds/Portal/bathroomDoor.mp3"
+            ]
+        },
+        null,
+        {
+            "type": "Interactable",
+            "slotID": "noose",
+            "name": "Schlinge",
+            "usages": [
+                {
+                    "usageID": "shove_noose",
+                    "filepath": "mashallah",
+                    "targetSlotID": "noose",
+                    "effect": "shove",
+                    "effectTargetID": "noose"
+                }
+            ]
+        }
+    ],
+    "focusedSlotIndex": 0
+}

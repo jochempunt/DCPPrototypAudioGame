@@ -1,0 +1,31 @@
+{
+    "roomID": "head",
+    "name": "Kopf",
+    "path": "../Data/Rooms/corpse/head.json",
+    "atmoSound": "../Data/Sounds/Atmo/driveway.mp3",
+    "slots": [
+        null,
+        {
+            "type": "Interactable",
+            "slotID": "ground",
+            "name": "Ohrlöcher",
+            "facingSound": []
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_head_corpse",
+            "name": "andere stellen der Leiche untersuchen ",
+            "facingSound": [],
+            "enteringRoomID": "corpse",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

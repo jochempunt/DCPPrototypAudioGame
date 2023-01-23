@@ -1,0 +1,91 @@
+{
+    "roomID": "livingroom_apartment",
+    "name": "Wohnzimmer",
+    "path": "../Data/Rooms/aparment/livingroom_apartment.json",
+    "atmoSound": "../Data/Sounds/Atmo/kitchen.mp3",
+    "slots": [
+        {
+            "type": "Container",
+            "slotID": "table_apartment",
+            "name": "Tisch",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": [
+                {
+                    "type":"Pickupable",
+                    "slotID": "vase",
+                    "name": "Vase",
+                    "usages": []
+                },
+                {
+                    "type":"Pickupable",
+                    "slotID": "laptop_apartment",
+                    "name": "laptop",
+                    "usages": []
+                }
+            ]
+            
+        },
+        {
+            "type": "Interactable",
+            "slotID": "couch_apartment",
+            "name": "Sofa"
+        },
+        {
+            "type": "Container",
+            "slotID": "shelf_apartment",
+            "name": "Regal",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": [
+                {
+                    "type":"Pickupable",
+                    "slotID": "picture_miriam_alex",
+                    "name": "Foto von Miriam und Alex",
+                    "usages": []
+                },
+                {
+                    "type":"Pickupable",
+                    "slotID": "note_2912",
+                    "name": "Notizzettel mit Aufschrift 2912",
+                    "usages": []
+                }
+            ]
+            
+        },
+        {
+            "type": "Interactable",
+            "slotID": "tv",
+            "name": "Fernseher"
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_livingroom_apartment_bedroom_apartment",
+            "name": "Tür zum Schlafzimmer",
+            "enteringRoomID": "bedroom_apartment",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/forensicsDoor.mp3"],
+            "isOpen": true
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_livingroom_apartment_hallway",
+            "name": "Tür zum Flur",
+            "enteringRoomID": "hallway",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/forensicsDoor.mp3"],
+            "isOpen": true
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_livingroom_apartment_kitchen_apartment",
+            "name": "Tür zur Küche",
+            "enteringRoomID": "kitchen_apartment.json",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/forensicsDoor.mp3"],
+            "isOpen": true
+        },
+        null
+    ],
+    "focusedSlotIndex": 0
+}

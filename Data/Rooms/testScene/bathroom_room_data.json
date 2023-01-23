@@ -1,0 +1,71 @@
+{
+    "roomID": "bathroomTest",
+    "name": "Badezimmer",
+    "path": "../Data/Rooms/testScene/bathroom_room_data.json",
+    "atmoSound": "../Data/Sounds/Atmo/bathRoom.mp3",
+    "slots": [{
+            "type": "Interactable",
+            "slotID": "window",
+            "name": "Fenster"
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_to_livingroomTest",
+            "name": "Tür zum Wohnzimmer",
+            "enteringRoomID": "livingroom",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/livingRoomDoor.mp3"],
+            "isOpen": true
+        },
+        {
+            "type": "Interactable",
+            "slotID": "sink",
+            "name": "Waschbecken"
+        },
+        {
+            "type": "Pickupable",
+            "slotID": "soap",
+            "isOpen": false,
+            "name": "Seife",
+            "usages": [{
+                "usageID": "washing_hands",
+                "filepath": "ich habe mir meine hände gewaschen, stinke aber immer noch",
+                "targetSlotID": "sink",
+                "effect": "",
+                "effectTargetID": "sink",
+                "destroyAfterUse": true
+            }]
+        },
+        {
+            "type": "Interactable",
+            "slotID": "bathtub",
+            "name": "Badewanne"
+        },
+        null,
+        {
+            "type": "Interactable",
+            "slotID": "shower",
+            "name": "Dusche",
+            "usages": [{
+                "usageID": "washing_hands",
+                "filepath": "ich habe geduscht, und rieche sehr gut.",
+                "targetSlotID": "shower",
+                "effect": "increment_state",
+                "effectTargetID": "man_with_hat"
+            }]
+        },
+        {
+            "type": "Pickupable",
+            "slotID": "hair_sample",
+            "name": "Haarprobe",
+            "usages": [{
+                "usageID": "microscope_hair",
+                "filepath": "das haar scheint ziemlich haarig zu sein",
+                "targetSlotID": "microscope_2",
+                "effect": "increment_state",
+                "effectTargetID": "microscope_2"
+            }]
+        }
+    ],
+    "focusedSlotIndex": 0
+}

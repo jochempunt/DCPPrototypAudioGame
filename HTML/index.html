@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <script src="../Scripts/game.js" defer></script>
+    <script type="module" src="../libs/hammer.js"></script>
+    <script src="../Scripts/control.js" defer></script>
+    <script src="../Scripts/speechRecognition.js" defer></script>
+
+
+</head>
+
+<body id="screen" class="scrollable">
+    <canvas id="backgroundCanvas"></canvas>
+    <h1>
+        <p id="thingText"></p>
+    </h1>
+
+    <section id="preGrameElements">
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+
+        <button id="startBtn" class="invisible">Spiel Starten</button>
+
+        <div class="steuerung" id="ste">
+            <div id="textField" class="scrollable">
+                <h3>Dies ist ein PROTOTYP!</h3>
+                <p>Bei der finalen Version dieses Audiogames werden letztlich (fast) alle grafischen Elemente wegfallen, sie dienen hier im Prototyp lediglich zur besseren Orientierung bei Testläufen.
+                    <b>ACHTUNG </b><i>der Prototyp läuft nur im
+                    Chrome Browser einwandfrei.
+                </i></p>
+
+                <h3>Ausgangssituation</h3>
+                <p>Momentan bist du in der Rolle des Kommisars und befindest sich in deinem Büro im Revier. Finde den Spurensicherer und interagier mit ihm um in seine Rolle zu schlüpfen und an den Tatort zu fahren.
+                </p>
+
+                <h3>Wie spiele ich?</h3>
+                <b>Im Spiel:</b>
+                <ul>
+                    <li><em>Swipe nach oben:</em> Interagiere mit dem Objekt vor dir.</li>
+                    <li><em>Swipe nach links/rechts:</em> Wende dich dem Gegenstand links/rechts von dir zu.</li>
+                    <li><em>Swipe nach unten:</em> Öffne das Inventar.</li>
+                    <li><em>Doppeltap:</em> Wende das aktuelle Item auf den Gegenstand vor dir an.</li>
+                </ul>
+
+                <b>Im Inventar:</b>
+                <ul>
+                    <li><em>Swipe nach oben:</em> Verlasse das Inventar.</li>
+                    <li><em>Swipe nach links/rechts:</em> Durchblätter die Gegenstände im Inventar.</li>
+                    <li><em>Swipe nach unten:</em> Starte den Kombinationsmodus mit dem aktuellen Item.</li>
+                    <li><em>Weiterer Swipe nach unten (Im Kombinationsmodus):</em> Kombiniere das zuerst ausgewählte Item mit dem momentan ausgewählten Item.</li>
+                    <li><em>Doppeltap:</em> Wähle das aktuelle Item aus und nehme es in die Hand.</li>
+                </ul>
+
+                <b>Hinweis:</b>
+                <p>Wenn im Besprechungsraum mit einer anderen Person interagiert wird, schlüpfst du in die Rolle dieser. Das heißt du spielst nun als diese Person und übernimmst deren Inventar und Stimme. </p>
+
+            </div>
+
+
+
+    </section>
+
+    </div>
+
+
+
+    <p class="hints"></p>
+    <div>
+        <p class="output invisible">
+            <em> ...diagnostic messages</em>
+        </p>
+    </div>
+</body>
+
+</html>

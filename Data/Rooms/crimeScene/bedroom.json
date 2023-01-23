@@ -1,0 +1,84 @@
+{
+    "roomID": "bedroom",
+    "name": "Schlafzimmer",
+    "path": "../Data/Rooms/crimeScene/bedroom.json",
+    "atmoSound": "../Data/Sounds/Atmo/schlafzimmer.mp3",
+    "slots": [{
+            "type": "Container",
+            "slotID": "closet",
+            "name": "Kleiderschrank",
+            "facingSound": [],
+            "isOpen": true,
+            "containerItems": [{
+                "type": "Pickupable",
+                "slotID": "fibers",
+                "name": "Fasern",
+                "usages": []
+            }]
+
+        },
+        {
+            "type": "Container",
+            "slotID": "bed",
+            "name": "Bett",
+            "facingSound": [],
+            "isOpen": true,
+            "containerItems": [{
+                    "type": "Pickupable",
+                    "slotID": "pillow",
+                    "name": "Kopfkissen",
+                    "usages": []
+                },
+                {
+                    "type": "Pickupable",
+                    "slotID": "blanket",
+                    "name": "Bettdecke",
+                    "usages": []
+                }
+            ]
+        },
+        {
+            "type": "Interactable",
+            "slotID": "mirror",
+            "name": "Spiegel",
+            "facingSound": []
+        },
+        {
+            "type": "Container",
+            "slotID": "bedside_table",
+            "name": "Nachttisch",
+            "facingSound": [],
+            "isOpen": true,
+            "containerItems": [{
+                "type": "Pickupable",
+                "slotID": "empty_tampon_package",
+                "name": "leere Tampon Packung",
+                "usages": []
+            }]
+
+        },
+        {
+            "type": "Portal",
+            "slotID": "to_livingroom",
+            "name": "Tür zum Wohnzimmer",
+            "facingSound": [],
+            "enteringRoomID": "livingroom",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": true
+        },
+        {
+            "type": "Portal",
+            "slotID": "to_bathroom",
+            "name": "Tür zum Badezimmer",
+            "facingSound": [],
+            "enteringRoomID": "bathroom",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": true
+        },
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

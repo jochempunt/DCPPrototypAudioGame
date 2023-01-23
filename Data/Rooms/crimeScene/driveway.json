@@ -1,0 +1,80 @@
+{
+    "roomID": "driveway",
+    "name": "Einfahrt",
+    "path": "../Data/Rooms/crimeScene/driveway.json",
+    "atmoSound": "../Data/Sounds/Atmo/einfahrt2.mp3",
+    "slots": [{
+            "type": "Container",
+            "slotID": "dumpster",
+            "name": "Mülltonne",
+            "interactSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_muelltonne_interact.mp3"],
+            "facingSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_muelltonne_discover.mp3"],
+            "discoverSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_muelltonne_discover.mp3"],
+            "isOpen": false,
+            "containerItems": [{
+                "type": "Pickupable",
+                "slotID": "parka_with_bloodstains",
+                "name": "Parka mit Blutflecken",
+                "usages": []
+            }]
+        },
+        {
+            "type": "Interactable",
+            "slotID": "parking_sign",
+            "name": "Parkschild",
+            "interactSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_parkschild_interact.mp3"],
+            "facingSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_parkschild_facing.mp3"],
+            "discoverSound": ["../Data/Sounds/Joost_Edited/Joost7.mp3"]
+        },
+        {
+            "type": "Portal",
+            "slotID": "to_veranda",
+            "name": "Weg zur Veranda",
+            "discoverSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_veranda_discover.mp3"],
+            "facingSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_veranda_facing.mp3"],
+            "enteringRoomID": "porch",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/steps2.mp3"],
+            "isOpen": true
+        },
+        {
+            "type": "Alter",
+            "slotID": "toMeetingOffice",
+            "name": "zurück zum Revier",
+            "discoverSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_revier_discover.mp3"],
+            "facingSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_revier_facing.mp3"],
+            "newLocationID": "Revier_1",
+            "newCharacterID": "Kommissar",
+            "usages": [{
+                    "usageID": "charWechsel2",
+                    "filepath": "../Data/Sounds/VoiceLines/Rooms/driveway/verlassen.mp3",
+                    "targetSlotID": "toMeetingOffice",
+                    "effect": "increment_state",
+                    "effectTargetID": "toMeetingOffice"
+                },
+                {
+                    "usageID": "charWechsel1Ankunft",
+                    "filepath": "../Data/Sounds/VoiceLines/Rooms/driveway/timZurueck.mp3",
+                    "targetSlotID": "toMeetingOffice",
+                    "effect": "increment_state",
+                    "effectTargetID": "toMeetingOffice"
+                }
+            ]
+        },
+        {
+            "type": "Portal",
+            "slotID": "to_Forest",
+            "name": "Ein kleiner Waldweg",
+            "discoverSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_wald_discover.mp3"],
+            "facingSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_wald_facing.mp3"],
+            "enteringRoomID": "forest",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_wald_interact.mp3"],
+            "isOpen": false
+        },
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 1
+}

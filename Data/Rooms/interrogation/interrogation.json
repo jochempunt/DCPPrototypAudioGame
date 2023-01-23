@@ -1,0 +1,52 @@
+{
+    "roomID": "interrogation_room",
+    "name": "Befragungsraum",
+    "path": "../Data/Rooms/interrogation/interrogation.json",
+    "atmoSound": "../Data/Sounds/Atmo/besprechungsraum.mp3",
+    "slots": [{
+            "type": "Portal",
+            "slotID": "door_interrogation_room_johanna",
+            "name": "Johanna Befragen",
+            "facingSound": [],
+            "enteringRoomID": "johanna",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_interrogation_room_luis",
+            "name": "Luis Befragen",
+            "facingSound": [],
+            "enteringRoomID": "luis",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_interrogation_room_alex",
+            "name": "Alex Befragen",
+            "facingSound": [],
+            "enteringRoomID": "alex",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_interrogation_room_jill",
+            "name": "Jill Befragen",
+            "facingSound": [],
+            "enteringRoomID": "jill",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        null,
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

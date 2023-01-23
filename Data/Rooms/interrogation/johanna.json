@@ -1,0 +1,42 @@
+{
+    "roomID": "johanna",
+    "name": "Johanna",
+    "path": "../Data/Rooms/interrogation/johanna.json",
+    "atmoSound": "../Data/Sounds/Atmo/driveway.mp3",
+    "slots": [
+        {
+            "type": "Interactable",
+            "slotID": "johanna_chats_by_miriam_and_luis",
+            "name": "Chats von Miriam und Luis",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "friendship_with_miriam",
+            "name": "Freundschaft zu Miriam",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "relationship_miriam_and_alex",
+            "name": "Beziehung Miriam und Alex",
+            "facingSound": []
+        },
+        
+        {
+            "type": "Portal",
+            "slotID": "door_johanna_interrogation_room",
+            "name": "Verhör verlassen",
+            "facingSound": [],
+            "enteringRoomID": "interrogation_room",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": "../Data/Sounds/Portal/bathroomDoor.mp3",
+            "isOpen": true
+        },
+        null,
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

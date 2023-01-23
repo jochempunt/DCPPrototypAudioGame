@@ -1,0 +1,33 @@
+[
+    {
+        "itemID": "fishing_rod",
+        "name": "Angel",
+        "usages": [
+            {
+                "usageID": "fish_boot_out_of_sink",
+                "filepath": "ich habe tatsächlich einen gummistiefel aus dem waschbecken geangelt",
+                "targetSlotID": "sink",
+                "effect": "give_item",
+                "effectTargetID": "boot"
+            }
+        ]
+    },
+    {
+        "itemID": "tea",
+        "name": "Tee",
+        "usages": [
+            {
+                "usageID": "give_tea_to_mmh",
+                "filepath": "oh danke für die tasse tee, sehr aufmerksam",
+                "targetSlotID": "man_with_hat",
+                "effect": "",
+                "effectTargetID": ""
+            }
+        ]
+    },
+    {
+        "itemID": "boot",
+        "name": "Stiefel",
+        "usages": []
+    }
+]

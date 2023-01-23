@@ -1,0 +1,86 @@
+{
+    "roomID": "bathroom",
+    "name": "Badezimmer",
+    "path": "../Data/Rooms/crimeScene/bathroom.json",
+    "atmoSound": "../Data/Sounds/Atmo/badezimmer.mp3",
+    "slots": [{
+            "type": "Container",
+            "slotID": "sink",
+            "name": "Waschbecken",
+            "facingSound": [],
+            "isOpen": true,
+            "containerItems": [{
+                    "type": "Pickupable",
+                    "slotID": "toothbrush",
+                    "name": "Zahnbürste",
+                    "accessCharacter": "joost",
+                    "usages": []
+                },
+                {
+                    "type": "Pickupable",
+                    "slotID": "calming_pills",
+                    "name": "Beruhigungstabletten",
+                    "accessCharacter": "tim",
+                    "isOpen": false,
+                    "usages": []
+                }
+
+            ]
+
+        },
+        {
+            "type": "Interactable",
+            "slotID": "bathtub",
+            "name": "Badewanne",
+            "accessCharacter": "tim",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "shower",
+            "name": "Dusche",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "toilet",
+            "name": "Toilette",
+            "facingSound": []
+        },
+        {
+            "type": "Container",
+            "slotID": "bathroom_cabinet",
+            "name": "Badschrank",
+            "facingSound": [],
+            "isOpen": true,
+            "containerItems": [{
+                    "type": "Pickupable",
+                    "slotID": "toiletpaper",
+                    "name": "Toilettenpapier",
+                    "usages": [],
+                    "isOpen": false
+                },
+                {
+                    "type": "Pickupable",
+                    "slotID": "good_smelling_soap",
+                    "name": "gut riechende Seife",
+                    "usages": [],
+                    "isOpen": false
+                }
+            ]
+        },
+        {
+            "type": "Portal",
+            "slotID": "to_bedroom",
+            "name": "Tür zum Schlafzimmer",
+            "facingSound": [],
+            "enteringRoomID": "bedroom",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": true
+        },
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

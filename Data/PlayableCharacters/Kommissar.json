@@ -1,0 +1,16 @@
+{
+    "characterID": "Kommissar",
+    "path": "../Data/PlayableCharacters/Kommisar.json",
+    "inventory": {
+        "focusedItemIndex": 0,
+        "inventoryID": "notes",
+        "items": [{
+            "itemID": "note_1",
+            "name": "Eine Leiche wurde in einer Waldhütte aufgefunden.",
+            "usages": []
+        }]
+    },
+    "inventoryOpenSound": "../Data/Sounds/General/NotesOpenSound.mp3",
+    "inventoryCloseSound": "../Data/Sounds/General/NotesCloseSound.mp3",
+    "soundArrayIndex": 2
+}

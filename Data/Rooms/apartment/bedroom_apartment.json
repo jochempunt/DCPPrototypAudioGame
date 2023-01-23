@@ -1,0 +1,68 @@
+{
+    "roomID": "bedroom_apartment",
+    "name": "Schlafzimmer",
+    "path": "../Data/Rooms/aparment/bedroom_apartment.json",
+    "atmoSound": "../Data/Sounds/Atmo/kitchen.mp3",
+    "slots": [
+        {
+            "type": "Container",
+            "slotID": "chest_of_drawers",
+            "name": "Kommode",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": [
+                {
+                    "type": "Pickupable",
+                    "slotID": "earrings_with_missing_clasp",
+                    "name": "Ohrringe mit fehlendem Verschluss",
+                    "usages": []
+                }
+            ]
+        },
+        {
+            "type": "Interactable",
+            "slotID": "bed_apartment",
+            "name": "bett"
+        },
+        {
+            "type": "Container",
+            "slotID": "closet_apartment",
+            "name": "Kleiderschrank",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": [
+                {
+                    "type": "Pickupable",
+                    "slotID": "lightblue_summerdress",
+                    "name": "Hellblaues Sommerkleid",
+                    "usages": []
+                },
+                {
+                    "type": "Pickupable",
+                    "slotID": "dark_blue_tshirt",
+                    "name": "Dunkelblaues Tshirt",
+                    "usages": []
+                }
+            ]
+            
+        },
+        {
+            "type": "Interactable",
+            "slotID": "house_plant",
+            "name": "Zimmerpflanze"
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_bedroom_apartment_livingroom_apartment",
+            "name": "Tür zum Wohnzimmer",
+            "enteringRoomID": "livingroom_apartment.json",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/forensicsDoor.mp3"],
+            "isOpen": true
+        },
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 0
+}

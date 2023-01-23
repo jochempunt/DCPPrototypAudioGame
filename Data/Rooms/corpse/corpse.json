@@ -1,0 +1,53 @@
+{
+    "roomID": "corpse",
+    "name": "Leiche",
+    "path": "../Data/Rooms/corpse/corpse.json",
+    "atmoSound": "../Data/Sounds/Atmo/driveway.mp3",
+    "slots": [
+        null,
+        null,
+        {
+            "type": "Portal",
+            "slotID": "door_corpse_head",
+            "name": "Kopf der Leiche untersuchen ",
+            "facingSound": [],
+            "enteringRoomID": "head",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_corpse_neck",
+            "name": "Hals der Leiche untersuchen ",
+            "facingSound": [],
+            "enteringRoomID": "neck",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_corpse_torso",
+            "name": "Rumpf der Leiche untersuchen ",
+            "facingSound": [],
+            "enteringRoomID": "torso",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_corpse_lower_body",
+            "name": "Unterkörper der Leiche untersuchen ",
+            "facingSound": [],
+            "enteringRoomID": "lower_body",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

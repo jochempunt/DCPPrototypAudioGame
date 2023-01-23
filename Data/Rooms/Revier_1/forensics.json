@@ -1,0 +1,84 @@
+{
+    "roomID": "forensics",
+    "name": "Forensik",
+    "path": "../Data/Rooms/Revier_1/forensics.json",
+    "atmoSound": "../Data/Sounds/Atmo/driveway.mp3",
+    "slots": [{
+            "type": "Container",
+            "slotID": "desk",
+            "name": "Schreibtisch",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": [
+                {
+                    "type":"Pickupable",
+                    "slotID": "pc_desk",
+                    "name": "PC",
+                    "usages": []
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "slotID": "work_table",
+            "name": "Arbeitstisch",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": [
+                    {
+                        "type":"Pickupable",
+                        "slotID": "cellulose",
+                        "name": "Zellstoff",
+                        "usages": []
+                    },
+                    {
+                        "type":"Pickupable",
+                        "slotID": "dipstick",
+                        "name": "messstab",
+                        "usages": []
+                    },
+                    {
+                        "type":"Pickupable",
+                        "slotID": "collection_vessel",
+                        "name": "Auffanggefäß",
+                        "usages": []
+                    }
+                ]
+        },
+        {
+            "type": "Interactable",
+            "slotID": "corpse_cooling",
+            "name": "Leichenkühlung",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "laboratory_centrifuge",
+            "name": "Laborzentrifuge",
+            "facingSound": []
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_forensics_autopsy",
+            "name": "Obduktionstisch",
+            "facingSound": [],
+            "enteringRoomID": "autopsy",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "false"
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_forensics_meetingroom",
+            "name": "zum Besprechungsraum",
+            "facingSound": [],
+            "enteringRoomID": "meetingroom",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

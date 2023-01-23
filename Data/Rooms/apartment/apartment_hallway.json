@@ -1,0 +1,59 @@
+{
+    "roomID": "apartment_hallway.json",
+    "name": "Hausflur",
+    "path": "../Data/Rooms/corpse/apartment_hallway.json",
+    "atmoSound": "../Data/Sounds/Atmo/driveway.mp3",
+    "slots": [
+        {
+            "type": "Interactable",
+            "slotID": "neighbor_tanja",
+            "name": "Nachbarin Tanja",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "landlord_nino",
+            "name": "Vermieter Nino",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "johanna",
+            "name": "Beste Freundin von Miriam Johanna",
+            "facingSound": []
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_apartment_hallway_luis_jill",
+            "name": "wohnung von Luis und Jill",
+            "facingSound": [],
+            "enteringRoomID": "luis_jill",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        {
+            "type": "Alter",
+            "slotID": "alter_apartment_hallway_revier_1",
+            "name": "Zurück zum Revier",
+            "facingSound": ["../Data/Sounds/VoiceLines/Rooms/meetingRoom/tim.mp3"],
+            "discoverSound": ["../Data/Sounds/VoiceLines/Rooms/meetingRoom/timDiscovery.mp3"],
+            "newLocationID": "Revier_1",
+            "newCharacterID": "Kommissar",
+            "usages": []
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_apartment_hallway_hallway",
+            "name": " zum Flur",
+            "facingSound": [],
+            "enteringRoomID": "hallway",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

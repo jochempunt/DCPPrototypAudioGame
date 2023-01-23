@@ -1,0 +1,82 @@
+{
+    "roomID": "porch",
+    "name": "Veranda",
+    "path": "../Data/Rooms/crimeScene/porch.json",
+    "atmoSound": "../Data/Sounds/Atmo/veranda2.mp3",
+    "slots": [{
+            "type": "Interactable",
+            "slotID": "bench",
+            "name": "Sitzbank",
+            "interactSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_sitzbank_interact.mp3"],
+            "facingSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_sitzbank_facing.mp3"],
+            "discoverSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_sitzbank_discover.mp3"]
+        },
+        {
+            "type": "Container",
+            "slotID": "doormat",
+            "name": "Fußmatte",
+            "interactSound": ["Wusch"],
+            "facingSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_fußmatte_facing.mp3"],
+            "discoverSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_fußmatte_discover.mp3"],
+            "isOpen": "true",
+            "containerItems": [{
+                    "type": "Pickupable",
+                    "slotID": "old_keychain",
+                    "isOpen": false,
+                    "name": "Alter Schlüsselanhänger ",
+                    "closedSound": ["hängt gar kein Schlüssel dran."],
+                    "usages": [],
+                    "facingSound": ["Der Schlüsselanhänger"],
+                    "discoverSound": ["Oh ein alter Schlüsselanhänger"]
+                },
+                {
+                    "type": "Pickupable",
+                    "slotID": "pine_needles",
+                    "isOpen": false,
+                    "name": "Tannennadeln ",
+                    "closedSound": ["Die werden kaum hilfreich sein."],
+                    "usages": [],
+                    "facingSound": ["die Tannennadeln"],
+                    "discoverSound": ["hier liegen ein paar Tannennadeln"]
+                }
+            ]
+        },
+        {
+            "type": "Portal",
+            "slotID": "to_livingroom",
+            "name": "Tür zum Wohnzimmer",
+            "enteringRoomID": "livingroom",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "facingSound": ["Zum Wohnzimmer"],
+            "discoverSound": ["Hier ist die Tür zum wohnzimmer."],
+            "isOpen": "true"
+        },
+        {
+            "type": "Portal",
+            "slotID": "to_driveway",
+            "name": "Tür zur Einfahrt",
+            "enteringRoomID": "driveway",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/steps.mp3"],
+            "facingSound": ["Zur Einfaht"],
+            "discoverSound": ["Hier gehts zur Einfahrt."],
+            "isOpen": "true"
+        },
+        {
+            "type": "Interactable",
+            "slotID": "bloodstains",
+            "name": "Blutspuren",
+            "interactSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_tropfen_interact1.mp3"],
+            "facingSound": ["Der rote Tropfen"],
+            "discoverSound": ["../Data/Sounds/Joost_Edited/JoostSelection/joost_tropfen_discover.mp3"],
+            "state": 0,
+            "accessCharacter": "joost",
+            "usages": []
+        },
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

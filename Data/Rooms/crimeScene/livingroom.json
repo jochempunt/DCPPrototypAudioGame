@@ -1,0 +1,145 @@
+{
+    "roomID": "livingroom",
+    "name": "Wohnzimmer",
+    "path": "../Data/Rooms/crimeScene/livingroom.json",
+    "atmoSound": "../Data/Sounds/Atmo/wohnzimmer.mp3",
+    "slots": [{
+            "type": "Container",
+            "slotID": "couch",
+            "name": "Sofa",
+            "accessCharacter": "joost",
+            "closedSound": ["Das sofa ist schwer."],
+            "interactSound": ["Wusch"],
+            "facingSound": ["das Sofa"],
+            "discoverSound": ["hier steht ein Sofa"],
+            "isOpen": false,
+            "containerItems": [{
+                "type": "Pickupable",
+                "slotID": "earring_closure",
+                "name": "Ohrringverschluss",
+                "facingSound": ["der Ohrringverschluss"],
+                "discoverSound": ["oh, hier befindet sich ein Ohrringverschluss"],
+                "usages": []
+            }],
+            "usages": [{
+                    "usageID": "activate_helper",
+                    "filepath": "Das Sofa ist so schwer, help me",
+                    "targetSlotID": "couch",
+                    "effect": "increment_both",
+                    "effectTargetID": "forensic_helper"
+                },
+                {
+                    "usageID": "hint_helper",
+                    "filepath": "Vielleicht sollte ich um hilfe bitten",
+                    "targetSlotID": "couch",
+                    "effect": "",
+                    "effectTargetID": "couch"
+                },
+                {
+                    "usageID": "move_sofa",
+                    "filepath": "Hier wird grad getragen.",
+                    "targetSlotID": "forensic_helper",
+                    "effect": "open_and_increment",
+                    "effectTargetID": "couch"
+                }
+            ]
+        },
+        {
+            "type": "Interactable",
+            "slotID": "forensic_helper",
+            "name": "Spurensichrung Helfer",
+            "accessCharacter": "joost",
+            "interactSound": [],
+            "facingSound": ["Flynn"],
+            "discoverSound": ["hier steht Flynn"],
+            "usages": [{
+                    "usageID": "greet_joost",
+                    "filepath": "Hallo Joost",
+                    "targetSlotID": "forensic_helper",
+                    "effect": "",
+                    "effectTargetID": "forensic_helper"
+                },
+                {
+                    "usageID": "offer_help",
+                    "filepath": "Hey kannst du mir helfen, Klar, Ich kann dir tragen helfen",
+                    "targetSlotID": "forensic_helper",
+                    "effect": "increment_both",
+                    "effectTargetID": "couch"
+                },
+                {
+                    "usageID": "already_asked",
+                    "filepath": "Dann lass uns das Sofa tragen.",
+                    "targetSlotID": "forensic_helper",
+                    "effect": "",
+                    "effectTargetID": "forensic_helper"
+                },
+                {
+                    "usageID": "already_helped",
+                    "filepath": "Ich hab dir doch schon geholfen",
+                    "targetSlotID": "forensic_helper",
+                    "effect": "",
+                    "effectTargetID": "forensic_helper"
+                }
+            ]
+        },
+        {
+            "type": "Pickupable",
+            "slotID": "broken_mobile",
+            "name": "Kaputtes Handy",
+            "accessCharacter": "tim",
+            "usages": []
+        },
+        {
+            "type": "Container",
+            "slotID": "table",
+            "name": "Tisch",
+            "facingSound": [],
+            "isOpen": true,
+            "containerItems": [{
+                    "type": "Pickupable",
+                    "slotID": "newspaper06.10",
+                    "name": "Zeitung vom 06. Oktober",
+                    "usages": []
+                },
+                {
+                    "type": "Pickupable",
+                    "slotID": "used_cup",
+                    "name": "Benutzte Tasse",
+                    "usages": []
+                }
+            ]
+        },
+        {
+            "type": "Portal",
+            "slotID": "to_porch",
+            "name": "Weg zur Veranda",
+            "facingSound": [],
+            "enteringRoomID": "porch",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": true
+        },
+        {
+            "type": "Portal",
+            "slotID": "to_kitchen",
+            "name": "Tür zur Küche",
+            "facingSound": [],
+            "enteringRoomID": "kitchen",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": true
+        },
+        {
+            "type": "Portal",
+            "slotID": "to_bedroom",
+            "name": "Tür zum Schlafzimmer",
+            "facingSound": [],
+            "enteringRoomID": "bedroom",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": true
+        },
+        null
+    ],
+    "focusedSlotIndex": 2
+}

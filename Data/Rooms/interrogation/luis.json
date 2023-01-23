@@ -1,0 +1,46 @@
+{
+    "roomID": "luis",
+    "name": "Luis",
+    "path": "../Data/Rooms/interrogation/luis.json",
+    "atmoSound": "../Data/Sounds/Atmo/driveway.mp3",
+    "slots": [
+        {
+            "type": "Interactable",
+            "slotID": "luis_chats_by_miriam_and_luis",
+            "name": "Chats von Miriam und Luis",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "luis_alibi",
+            "name": "Alibi",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "toothbrush",
+            "name": "Zahnbürste",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "luis_right_handed",
+            "name": "Rechtshänder",
+            "facingSound": []
+        },  
+        {
+            "type": "Portal",
+            "slotID": "door_luis_interrogation_room",
+            "name": "Verhör verlassen",
+            "facingSound": [],
+            "enteringRoomID": "interrogation_room",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": "../Data/Sounds/Portal/bathroomDoor.mp3",
+            "isOpen": true
+        },
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

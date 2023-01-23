@@ -1,0 +1,27 @@
+{
+    "gameState": 0,
+    "gameProgress": 0,
+    "currentRoom": "meetingroom",
+    "currentCharacter": "Kommissar",
+    "rooms": [
+        "../Data/Rooms/Revier_1/meetingroom.json",
+        "../Data/Rooms/Revier_1/office.json",
+        "../Data/Rooms/interrogation/interrogation.json",
+        "../Data/Rooms/crimeScene/bathroom.json",
+        "../Data/Rooms/crimeScene/bedroom.json",
+        "../Data/Rooms/crimeScene/driveway.json",
+        "../Data/Rooms/crimeScene/forest.json",
+        "../Data/Rooms/crimeScene/kitchen.json",
+        "../Data/Rooms/crimeScene/livingroom.json",
+        "../Data/Rooms/crimeScene/porch.json"
+
+    ],
+    "characters": [
+        "../Data/PlayableCharacters/Joost.json",
+        "../Data/PlayableCharacters/Kommissar.json",
+        "../Data/PlayableCharacters/Tim.json",
+        "../Data/PlayableCharacters/Forensic_scientist.json",
+        "../Data/PlayableCharacters/Forensic_technician.json"
+    ],
+    "firstEverFocusedSlot": 0
+}

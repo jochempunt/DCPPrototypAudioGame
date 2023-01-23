@@ -1,0 +1,31 @@
+{
+    "roomID": "lower_body",
+    "name": "Unterkörper",
+    "path": "../Data/Rooms/corpse/lower_body.json",
+    "atmoSound": "../Data/Sounds/Atmo/driveway.mp3",
+    "slots": [
+        null,
+        {
+            "type": "Interactable",
+            "slotID": "note_with_name_on_ten",
+            "name": "Zettel mit Name am Zeh",
+            "facingSound": []
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_lower_body_corpse",
+            "name": "andere stellen der Leiche untersuchen ",
+            "facingSound": [],
+            "enteringRoomID": "corpse",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

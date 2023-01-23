@@ -1,0 +1,36 @@
+{
+    "roomID": "torso",
+    "name": "Rumpf",
+    "path": "../Data/Rooms/corpse/torso.json",
+    "atmoSound": "../Data/Sounds/Atmo/driveway.mp3",
+    "slots": [
+        {
+            "type": "Interactable",
+            "slotID": "stabbing_wounds",
+            "name": "Stichwunden",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "stomach_contents",
+            "name": "Mageninhalt",
+            "facingSound": []
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_torso_corpse",
+            "name": "andere stellen der Leiche untersuchen ",
+            "facingSound": [],
+            "enteringRoomID": "corpse",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

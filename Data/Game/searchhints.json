@@ -1,0 +1,20 @@
+[
+    {
+        "hintID": "blood",
+        "positionX": 50,
+        "positionY": 50,
+        "hint": "hier befindet sich ein blutfleck auf dem Blatt"
+    },
+    {
+        "hintID": "tear",
+        "positionX": 20,
+        "positionY": 20,
+        "hint": "an dieser Stelle ist das Blatt zerissen"
+    },
+    {
+        "hintID": "brown_spot",
+        "positionX": 80,
+        "positionY": 80,
+        "hint": "hier hat sich das blatt etwas gebräunt"
+    }
+]

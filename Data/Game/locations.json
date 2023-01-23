@@ -1,0 +1,26 @@
+[
+    {
+        "locationID": "testScene",
+        "name": "testSzene",
+        "firstRoom": "livingroomTest",
+        "arrivingSound": "../Data/Sounds/Portal/kitchenDoor.mp3"
+    },
+    {
+        "locationID": "meetingOfficeTest",
+        "name": "Besprechungsraum",
+        "firstRoom": "meetingroom",
+        "arrivingSound": "../Data/Sounds/General/arrivingCar.mp3"
+    },
+    {
+        "locationID": "crimeScene",
+        "name": "Tatort",
+        "firstRoom": "driveway",
+        "arrivingSound": "../Data/Sounds/General/arrivingCar.mp3"
+    },
+    {
+        "locationID": "Revier_1",
+        "name": "Revier1",
+        "firstRoom": "office",
+        "arrivingSound": "../Data/Sounds/Portal/kitchenDoor.mp3"
+    }
+]

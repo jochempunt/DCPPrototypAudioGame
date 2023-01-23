@@ -1,0 +1,51 @@
+{
+    "roomID": "alex",
+    "name": "Alex",
+    "path": "../Data/Rooms/interrogation/alex.json",
+    "atmoSound": "../Data/Sounds/Atmo/driveway.mp3",
+    "slots": [
+        {
+            "type": "Interactable",
+            "slotID": "alex_chats_by_miriam_and_luis",
+            "name": "Chats von Miriam und Luis",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "alex_earrings_with_missing_closure",
+            "name": "Ohrringe mit fehlendem verschluss",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "alex_alibi",
+            "name": "Alibi",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "alex_dirty_shoes",
+            "name": "dreckige Schuhe",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "alex_right_handed",
+            "name": "Rechtshänder",
+            "facingSound": []
+        },  
+        {
+            "type": "Portal",
+            "slotID": "door_alex_interrogation_room",
+            "name": "Verhör verlassen",
+            "facingSound": [],
+            "enteringRoomID": "interrogation_room",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": "../Data/Sounds/Portal/bathroomDoor.mp3",
+            "isOpen": true
+        },
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

@@ -1,0 +1,39 @@
+{
+    "roomID": "bathroom_apartment",
+    "name": "Bad",
+    "path": "../Data/Rooms/aparment/bathroom_apartment.json",
+    "atmoSound": "../Data/Sounds/Atmo/kitchen.mp3",
+    "slots": [
+        
+        {
+            "type": "Interactable",
+            "slotID": "toilet_bathroom_apartment",
+            "name": "Toilette"
+        },
+        {
+            "type": "Interactable",
+            "slotID": "shower_bathroom_apartment",
+            "name": "Dusche"
+        },
+        {
+            "type": "Interactable",
+            "slotID": "toilet_bathroom_apartment",
+            "name": "Toilette"
+        },
+        
+        {
+            "type": "Portal",
+            "slotID": "door_bathroom_apartment_hallway",
+            "name": "Tür zum Flur",
+            "enteringRoomID": "hallway.json",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/forensicsDoor.mp3"],
+            "isOpen": true
+        },
+        null,
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 0
+}

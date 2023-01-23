@@ -1,0 +1,18 @@
+{
+    "characterID": "tim",
+    "path": "../Data/PlayableCharacters/Tim.json",
+    "inventory": {
+        "focusedItemIndex": 0,
+        "inventoryID": "backpack",
+        "items": [
+
+        ]
+    },
+    "inventoryOpenSound": "../Data/Sounds/General/BagOpenSound.mp3",
+    "inventoryCloseSound": "../Data/Sounds/General/BagCloseSound.mp3",
+    "inventoryEmptySound": "../Data/Sounds/VoiceLines/General/Tim/TimEmptyInventory.mp3",
+    "combinationNotPossibleSound": "../Data/Sounds/VoiceLines/General/Tim/TimNoCombination.mp3",
+    "interactionNotPossibleSound": "../Data/Sounds/VoiceLines/General/Tim/TimNoInteract.mp3",
+    "containerEmptySound": "../Data/Sounds/VoiceLines/General/Tim/TimEmptyContainer.mp3",
+    "soundArrayIndex": 1
+}

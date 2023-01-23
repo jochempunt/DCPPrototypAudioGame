@@ -1,0 +1,12 @@
+{
+    "characterID": "forensic_technician",
+    "path": "../Data/PlayableCharacters/Kommisar.json",
+    "inventory": {
+        "focusedItemIndex": 0,
+        "inventoryID": "forensic_technician_items",
+        "items": []
+    },
+    "inventoryOpenSound": "../Data/Sounds/General/NotesOpenSound.mp3",
+    "inventoryCloseSound": "../Data/Sounds/General/NotesCloseSound.mp3",
+    "soundArrayIndex": 2
+}

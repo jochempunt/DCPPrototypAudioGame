@@ -1,0 +1,80 @@
+{
+    "roomID": "meetingroom",
+    "name": "Besprechungsraum",
+    "path": "../Data/Rooms/meetingOffice/meetingroom.json",
+    "atmoSound": "../Data/Sounds/Atmo/besprechungsraum.mp3",
+    "slots": [
+        null,
+        null,
+        {
+            "type": "Alter",
+            "slotID": "tracer",
+            "name": "Spurensicherer",
+            "facingSound": ["../Data/Sounds/Kommisar_Mertens/Mertens_Revier1_11.mp3"],
+            "discoverSound": [],
+            "newLocationID": "crimeScene",
+            "newCharacterID": "joost",
+            "usages": []
+        },
+        {
+            "type": "Alter",
+            "slotID": "investigator",
+            "name": "Ermitttler Tim",
+            "facingSound": ["../Data/Sounds/Kommisar_Mertens/Mertens_Revier1_8.mp3"],
+            "discoverSound": ["../Data/Sounds/VoiceLines/Rooms/meetingRoom/timDiscovery.mp3"],
+            "newLocationID": "crimeScene",
+            "newCharacterID": "tim",
+            "usages": [{
+                    "usageID": "charWechsel1",
+                    "filepath": "../Data/Sounds/VoiceLines/Rooms/meetingRoom/CharWechsel1.mp3",
+                    "targetSlotID": "investigator",
+                    "effect": "increment_state",
+                    "effectTargetID": "investigator"
+                },
+                {
+                    "usageID": "charWechsel1Ankunft",
+                    "filepath": "../Data/Sounds/VoiceLines/Rooms/meetingRoom/ankunnft1.mp3",
+                    "targetSlotID": "investigator",
+                    "effect": "increment_state",
+                    "effectTargetID": "investigator"
+                }
+            ],
+            "isVisible": false
+        },
+        {
+            "type": "Alter",
+            "slotID": "forensic_scientist_alter",
+            "name": "Forensikerin",
+            "facingSound": ["../Data/Sounds/Kommisar_Mertens/Mertens_Revier1_9.mp3"],
+            "discoverSound": [],
+            "newLocationID": "Revier_1",
+            "newCharacterID": "forensic_scientist",
+            "usages": [],
+            "isVisible": false
+        },
+        {
+            "type": "Alter",
+            "slotID": "forensic_technician_alter",
+            "name": "Kriminaltechnikerin",
+            "facingSound": ["../Data/Sounds/Kommisar_Mertens/Mertens_Revier1_10.mp3"],
+            "discoverSound": [],
+            "newLocationID": "Revier_1",
+            "newCharacterID": "forensic_technician",
+            "usages": [],
+            "isVisible": false
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_meetingroom_office",
+            "name": "zum Büro",
+            "facingSound": ["../Data/Sounds/Kommisar_Mertens/Mertens_Revier1_12.mp3"],
+            "enteringRoomID": "office",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/livingRoomDoor.mp3"],
+            "isOpen": "true"
+        },
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

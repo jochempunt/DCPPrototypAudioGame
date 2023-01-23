@@ -1,0 +1,36 @@
+{
+    "roomID": "neck",
+    "name": "Hals",
+    "path": "../Data/Rooms/corpse/neck.json",
+    "atmoSound": "../Data/Sounds/Atmo/driveway.mp3",
+    "slots": [
+        {
+            "type": "Interactable",
+            "slotID": "throat",
+            "name": "Kehlkopf",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "strangulations",
+            "name": "Würgemale",
+            "facingSound": []
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_neck_corpse",
+            "name": "andere stellen der Leiche untersuchen ",
+            "facingSound": [],
+            "enteringRoomID": "corpse",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

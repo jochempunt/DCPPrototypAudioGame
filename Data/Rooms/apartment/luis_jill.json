@@ -1,0 +1,32 @@
+{
+    "roomID": "luis_jill",
+    "name": "Wohnung luis und Jill",
+    "path": "../Data/Rooms/aparment/livingroom_apartment.json",
+    "atmoSound": "../Data/Sounds/Atmo/kitchen.mp3",
+    "slots": [
+        {
+            "type": "Interactable",
+            "slotID": "luis_apartment",
+            "name": "luis"
+        },
+        {
+            "type": "jill_apartment",
+            "name": "jill"
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_luis_jill_hallway",
+            "name": "Tür zum Flur",
+            "enteringRoomID": "hallway",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/forensicsDoor.mp3"],
+            "isOpen": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 0
+}

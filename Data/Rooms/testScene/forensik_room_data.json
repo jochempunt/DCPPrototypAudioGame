@@ -1,0 +1,41 @@
+{
+    "roomID": "forensicsTest",
+    "name": "Forensik",
+    "path": "../Data/Rooms/testScene/meeting_room_data.json",
+    "atmoSound": "../Data/Sounds/Atmo/forensik.mp3",
+    "slots": [
+        null,
+        null,
+        {
+            "type": "Interactable",
+            "slotID": "microscope_2",
+            "name": "Mikroskop"
+        },
+        {
+            "type": "Interactable",
+            "slotID": "table_1",
+            "name": "Tisch"
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_to_kitchenTest",
+            "name": "Tür zur Küche",
+            "enteringRoomID": "kitchenTest",
+            "facingSlotInOppositeRoom": 3,
+            "interactSound": ["../Data/Sounds/Portal/kitchenDoor.mp3"],
+            "isOpen": true
+        },
+        {
+            "type": "Pickupable",
+            "slotID": "latex_gloves",
+            "name": "Latex Handschuhe"
+        },
+        {
+            "type": "Interactable",
+            "slotID": "fire_extinguisher",
+            "name": "Feuerlöscher"
+        },
+        null
+    ],
+    "focusedSlotIndex": 0
+}

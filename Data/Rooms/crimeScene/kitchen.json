@@ -1,0 +1,81 @@
+{
+    "roomID": "kitchen",
+    "name": "Küche",
+    "path": "../Data/Rooms/crimeScene/kitchen.json",
+    "atmoSound": "../Data/Sounds/Atmo/kueche.mp3",
+    "slots": [{
+            "type": "Container",
+            "slotID": "kitchen_cabinet",
+            "name": "Küchenschrank",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": [{
+                    "type": "Pickupable",
+                    "slotID": "glasses",
+                    "name": "Gläser",
+                    "usages": []
+                },
+                {
+                    "type": "Pickupable",
+                    "slotID": "cups",
+                    "name": "Tassen",
+                    "usages": []
+                }
+            ]
+        },
+        {
+            "type": "Interactable",
+            "slotID": "stove",
+            "name": "Herd",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "corpse_location",
+            "name": "Leichenfundort",
+            "accessCharacter": "tim",
+            "facingSound": []
+        },
+        {
+            "type": "Pickupable",
+            "slotID": "knive_block",
+            "name": "Messerblock",
+            "accessCharacter": "tim",
+            "usages": []
+        },
+        {
+            "type": "Container",
+            "slotID": "fridge",
+            "name": "Kühlschrank",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": [{
+                    "type": "Pickupable",
+                    "slotID": "started_milk_carton",
+                    "name": "angefangene Milchpackung",
+                    "usages": []
+                },
+                {
+                    "type": "Pickupable",
+                    "slotID": "cheese",
+                    "name": "Käse",
+                    "usages": []
+                }
+
+            ]
+        },
+        {
+            "type": "Portal",
+            "slotID": "to_livingroom",
+            "name": "Weg zum Wohnzimmer",
+            "facingSound": [],
+            "enteringRoomID": "livingroom",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

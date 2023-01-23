@@ -1,0 +1,60 @@
+{
+    "roomID": "office",
+    "name": "Büro",
+    "path": "../Data/Rooms/Revier_1/office.json",
+    "atmoSound": "../Data/Sounds/Atmo/buero.mp3",
+    "slots": [{
+            "type": "Container",
+            "slotID": "perpetrator_files",
+            "name": "Täterakte",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": []
+
+        },
+        {
+            "type": "Container",
+            "slotID": "paper_bin",
+            "name": "Papierkorb",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "computer",
+            "name": "Computer",
+            "facingSound": ["../Data/Sounds/Kommisar_Mertens/Mertens_Revier1_4.mp3"],
+            "interactSound": ["../Data/Sounds/Kommisar_Mertens/Mertens_Revier1_4-2.mp3"]
+        },
+        {
+            "type": "Interactable",
+            "slotID": "prosecutor",
+            "name": "Staatsanwalt",
+            "facingSound": ["../Data/Sounds/Kommisar_Mertens/Mertens_Revier1_5.mp3"]
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_office_interrogation",
+            "name": "zum Verhör",
+            "facingSound": ["../Data/Sounds/Kommisar_Mertens/Mertens_Revier1_6.mp3"],
+            "enteringRoomID": "interrogation_room",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Kommisar_Mertens/Mertens_Revier1_6-2.mp3"],
+            "isOpen": false
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_office_meetingroom",
+            "name": "zum Besprechungsraum",
+            "facingSound": ["../Data/Sounds/Kommisar_Mertens/Mertens_Revier1_7.mp3"],
+            "enteringRoomID": "meetingroom",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}

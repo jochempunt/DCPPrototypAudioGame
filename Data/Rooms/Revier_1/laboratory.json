@@ -1,0 +1,62 @@
+{
+    "roomID": "forensics",
+    "name": "Forensik",
+    "path": "../Data/Rooms/Revier_1/forensics.json",
+    "atmoSound": "../Data/Sounds/Atmo/driveway.mp3",
+    "slots": [{
+            "type": "Container",
+            "slotID": "Table_laboratory",
+            "name": "Tisch",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": {
+                "focusedItemIndex": 0,
+                "inventoryID": "table_laboratory_items",
+                "items":
+                [
+                    {
+                        "itemID": "pc_table_laboratory",
+                        "name": "PC",
+                        "usages": []
+                    }
+                ]
+            }
+        },
+        {
+            "type": "Container",
+            "slotID": "fridge_laboratory",
+            "name": "Kühlschrank",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": []
+            
+        },
+        {
+            "type": "Interactable",
+            "slotID": "microscope_laboratory",
+            "name": "Mikroskop",
+            "facingSound": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "pcr_device",
+            "name": "PCR Gerät",
+            "facingSound": []
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_laboratory_meetingroom",
+            "name": "zum Besprechungsraum",
+            "facingSound": [],
+            "enteringRoomID": "meetingroom",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/bathroomDoor.mp3"],
+            "isOpen": "true"
+        },
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+
+}

@@ -1,0 +1,81 @@
+{
+    "roomID": "hallway",
+    "name": "Flur",
+    "path": "../Data/Rooms/aparment/hallway.json",
+    "atmoSound": "../Data/Sounds/Atmo/kitchen.mp3",
+    "slots": [
+        {
+            "type": "Container",
+            "slotID": "wardrobe",
+            "name": "Garderobe",
+            "facingSound": [],
+            "isOpen": "true",
+            "containerItems": [
+                {
+                    "type": "Pickupable",
+                    "slotID": "cardigan",
+                    "name": "Strickjacke",
+                    "usages": []
+                },
+                {
+                    "type": "Pickupable",
+                    "slotID": "denim_jacket_with_ripped_pocket",
+                    "name": "Jeansjacke mit gerissener Tasche",
+                    "usages": []
+                },
+                {
+                    "type": "Pickupable",
+                    "slotID": "Wool_coat",
+                    "name": "Wollmantel",
+                    "usages": []
+                }
+            ]
+            
+        },
+        {
+            "type": "Pickupable",
+            "slotID": "dirty_shoes",
+            "name": "dreckige Schuhe",
+            "usages": []
+        },
+        {
+            "type": "Interactable",
+            "slotID": "alex_hallway",
+            "name": "Alex"
+        },
+        {
+            "type": "Interactable",
+            "slotID": "mirror",
+            "name": "Spiegel"
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_hallway_livingroom_apartment",
+            "name": "Tür zum Wohnzimmer",
+            "enteringRoomID": "livingroom_apartment",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/forensicsDoor.mp3"],
+            "isOpen": true
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_hallway_bathroom_apartment",
+            "name": "Tür zum Badezimmer",
+            "enteringRoomID": "bathroom_apartment",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/forensicsDoor.mp3"],
+            "isOpen": true
+        },
+        {
+            "type": "Portal",
+            "slotID": "door_hallway_apartment_hallway",
+            "name": "Tür zum Hausflur",
+            "enteringRoomID": "apartment_hallway",
+            "facingSlotInOppositeRoom": 2,
+            "interactSound": ["../Data/Sounds/Portal/forensicsDoor.mp3"],
+            "isOpen": true
+        },
+        null
+    ],
+    "focusedSlotIndex": 0
+}

@@ -1,0 +1,48 @@
+{
+    "roomID": "meetingroomTest",
+    "path": "../Data/Rooms/meetingOfficeTest/meetingroomTest.json",
+    "atmoSound": "../Data/Sounds/Atmo/meetingRoom.mp3",
+    "slots": [
+        null,
+        null,
+        {
+            "type": "Alter",
+            "slotID": "tracer",
+            "name": "Spurensicherer",
+            "facingSound": ["../Data/Sounds/VoiceLines/Rooms/meetingRoom/joost.mp3"],
+            "discoverSound": ["../Data/Sounds/VoiceLines/Rooms/meetingRoom/joostDiscovery.mp3"],
+            "newLocationID": "testScene",
+            "newCharacterID": "bob",
+            "usages": []
+        },
+        {
+            "type": "Alter",
+            "slotID": "investigator",
+            "name": "Ermittler",
+            "facingSound": ["../Data/Sounds/VoiceLines/Rooms/meetingRoom/tim.mp3"],
+            "discoverSound": ["../Data/Sounds/VoiceLines/Rooms/meetingRoom/timDiscovery.mp3"],
+            "newLocationID": "testScene",
+            "newCharacterID": "Tim",
+            "usages": [{
+                    "usageID": "charWechsel1",
+                    "filepath": "../Data/Sounds/VoiceLines/Rooms/meetingRoom/CharWechsel1.mp3",
+                    "targetSlotID": "investigator",
+                    "effect": "increment_state",
+                    "effectTargetID": "investigator"
+                },
+                {
+                    "usageID": "charWechsel1Ankunft",
+                    "filepath": "../Data/Sounds/VoiceLines/Rooms/meetingRoom/ankunnft1.mp3",
+                    "targetSlotID": "investigator",
+                    "effect": "increment_state",
+                    "effectTargetID": "investigator"
+                }
+            ]
+        },
+        null,
+        null,
+        null,
+        null
+    ],
+    "focusedSlotIndex": 2
+}
